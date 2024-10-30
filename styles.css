@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="date"], input[type="text"] {
+    flex: 1;
+    margin: 0 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+.calendar {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+#calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.event {
+    background-color: #d1e7dd;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
